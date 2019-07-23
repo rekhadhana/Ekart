@@ -1,0 +1,345 @@
+
+header{
+    height: 100px;
+    border: 2px solid none;
+    margin-left: 5%;
+    /* background-color: lightslategray; */
+    /* margin-right: 10%; */
+}
+
+#logo{
+    height: 100px;
+    width:200px;
+    /* display: block; */
+}
+#search{
+ position: absolute;
+ top:30px;
+ right: 55px;
+ border-radius: 10px;
+ width: 150px;
+ text-align: right;
+}
+#welcome{
+    position: absolute;
+    top:55px;
+    right: 61px;
+   text-align:left;
+   margin: 0;
+   size: 5px;
+}
+ #links{
+    position: absolute;
+    top:80px;
+    right:65px;
+display:inline-flex;
+margin-inline-start: 50px;
+/* border: 1px solid red; */
+/* margin-left: -40px; */
+} 
+#links .anchor{
+    margin-right:10px;
+}
+
+#aclick{
+    position: absolute;
+    top:30px;
+    right: 180px;
+    }
+#srchimg{
+    height: 10px;
+    width: 17px;
+}
+#row1,#product{
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+}
+#row1 div{
+    flex: 1;
+     text-align: center;
+     background-color:lightgray;
+    /* border: 1px solid black; */
+    }
+ #row1{
+     border-top: 1px solid black;
+     border-bottom: 1px solid black;
+     border-left: 1px solid black;
+      border-right: 1px solid black; 
+                }   
+#col1,#col2,#col3,#col4,#col5{
+    border-right: 1px solid black;
+    padding: 2px;
+    
+}
+#bodylinks{
+    display: inline-flex;
+    margin-left: 2%;
+}
+#product{
+    height: 350px;
+}
+#product #p1,
+    #product #cart{
+    flex: 1;
+    /* border: 1px solid #111; */
+	overflow: hidden;
+	margin: 0 auto;
+
+}
+#product #p1{
+    width:70%;
+    /* height: 300px; */
+	/* border: 1px solid #111; */
+    
+    
+}
+#fisrstimg{
+    /* width: 100%;
+    height: 300px;
+    border: 1px solid lightgray; */
+    width: 90%; font-size: 0;
+	/* border: 1px solid #111; */
+	overflow: hidden;
+    margin: 0 auto;
+     height: 300px; 
+     
+
+}
+#secimg,#thirdimg,#fourthimg{
+    width: 25%;
+    height: 300px;
+}
+
+
+.chair{
+    /* width: 35%; */
+    height: 300px;
+    border: 1px solid lightgray;
+    overflow: hidden;
+    margin: 0 auto;
+    height: 300px; 
+
+    
+}
+.chairs{
+    width: 400px;
+    /* height: 310px; */
+    position: absolute; 
+    display: none;
+    left: 6%;
+}
+#product #prodinfo{
+flex: 2;
+margin-left: 100px;
+margin-right: 270px;
+/* width: 80%; */
+/* border: 1px solid red; */
+ }
+    
+#prodinfo .star{
+    height: 20px;
+    width: 17px;
+
+    
+}
+#prodinfo .review{
+    margin-bottom: 20px;
+    /* border: 1px solid red; */
+    height: 10px;
+    padding-bottom: 2px;
+}
+#qun{
+    display: flex;
+}
+#add{
+    margin-top: -7px;
+    margin-left: -15px;
+}
+#quantity{
+    height: 20px;
+    width: 20px;
+    text-align: center;
+}
+#addcart{
+    text-decoration-color:black;
+    height:30px;
+    width: 90px;
+}
+#cart{
+
+    margin-left:500px;
+    /* border: 1px solid red; */
+}
+#info{
+    color: black;
+}
+#compare,#mycart{
+    height:170px;
+    width: 200px;
+    border: 1px solid black;
+    background-color: lightgray;
+     margin-right:10px; 
+     /* margin-top:10px; */
+    /* position: relative; */
+    /* display:inline-block; */
+}
+#mycart{
+    height:150px;
+    
+    margin-top:2px;
+}
+
+#poll{
+    height:155px;
+    width: 200px;
+    border: 1px solid black;
+    background-color: lightgray;
+    position: absolute;
+    left:79%;
+    top:780px;
+    
+    
+}
+#compare h3,#mycart h3,#poll h3{
+    color: blue;
+    margin-left: 5px;
+    font-family: arial;
+    
+}
+#poll h4{
+    margin-left: 5px;
+    
+    margin-bottom: 2px;
+
+}
+#compare .sony,#mycart .sony,#poll .rate{
+    font-size: 15px;
+    margin-left: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 0;
+}
+#compare #clear,#mycart #clear{
+    margin-left: 5px;
+}
+#btncompare{
+    margin-left: 30px;
+}
+#row2{
+    /* border: 1px solid red; */
+    display: flex;
+    height: 300px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#row2 #col1_1{
+flex: 2;
+    width: 78%;
+/* border-right: 1px solid red; */
+margin-bottom: 100px;
+}
+
+#divimg{
+    height:200px;
+    width: 200px;
+}
+   #col2_2 #bpltv{
+       position: absolute;
+       left:79%;
+       top:570px;
+        height: 200px;
+        width: 200px;
+    }
+
+   #zoomer2,#zoomer3,#zoomer4 {
+             width: 200px; 
+            margin: 2rem auto;
+        } 
+        /* #zoomer1{
+            position: absolute;
+            top:500px;
+        }
+        zoomer2,#zoomer3,#zoomer4{
+            position: absolute;
+            top:500px;
+            le
+        }  */
+
+#col2_1{ 
+    width: 200px;
+    height: 70px;
+    
+    display: flex;;
+    position:absolute;
+    top:600px;
+    left:7%;
+}
+.demoimg .dimages{
+    width: 55px;
+    height: 50px;
+    margin-top: 30px;
+    flex: 1;
+    border: 1px solid lightgray;
+
+}
+
+#fisrstimg #zoomer1{
+    border: 1px solid red;
+    
+    
+}
+#row3{
+    position: absolute;
+    top:700px;
+    width: 70%;
+    height: 270px;
+    margin-left: 5%; 
+    
+    /* margin-bottom: -100px; */
+    /* border: 1px solid red;/
+    /* margin-bottom: 100px; */
+}
+#row4{
+    margin-top: 100px;
+    /* border: 1px solid red; */
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    height: 430px;
+}
+#col3_1 {
+    
+    display: flex;
+
+}
+.sujimg .simages{
+
+
+    flex: 1;
+    width: 190px;
+    height: 190px;
+    margin-top: 70px;
+    margin-left: -50%; 
+    /* flex: 1; */
+    border: 1px solid lightgray;
+
+}
+.cost{
+    width: 190px;
+    height: 190px;
+    /* margin-top: 70px; */
+    margin-left: -50%; 
+}
+footer{
+    /* border: 1px solid red; */
+    height: 150px;
+}
+footer div{
+    margin-top: 150px;
+    margin-left: 70px;
+}
+div #secondlink{
+    margin-left: 400px;
+}

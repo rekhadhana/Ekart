@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="furniture.css"></link>
+    <link rel="stylesheet" href="stylemedia.css"></link>
+    <!-- <script src="furniture.js"></script> -->
+    <script src="jsfiles/showImg.js"></script>
+    <script src="jsfiles/media.js"></script>
+    <!-- <script src="jsfiles/zoomImg.js"></script> -->
+
+    <!-- <script src="jsfiles/zoomImg.js"></script> -->
+
+
+</head>
+
+<body>
+    <header>
+        <!-- media -->
+        <img id="menu" onmouseover="display()" onmouseout="hide()" src="./images/menu-1.jpg"
+            alt="">
+        <div id="drpdown">
+            <ul type="none">
+                <li> <a class="anchor" href="#">Apparel</a></li>
+                <li> <a class="anchor" href="#"> Electronincs</a></li>
+                <li> <a class="anchor" href="#"> Furniture</a></li>
+                <li> <a class="anchor" href="#"> Music</a></li>
+                <li> <a class="anchor" href="#"> E-Books</a></li>
+                <li> <a class="anchor" href="#">My Account</a></li>
+                <li><a class="anchor" href="#">My Wishlist</a></li>
+                <li><a class="anchor" href="#">My Cart</a></li>
+                <li><a class="anchor" href="#">Chackout</a></li>
+                <li> <a class="anchor" href="#">Login</a></li>
+            </ul>
+        </div>
+        <!-- ends -->
+        <!-- //cart img -->
+        <img id="mcart" src="./images/cartimg.jpg" alt="">
+        <p id="number">1</p>
+        <img id="logo" src="./images/amazonlogo.jpg">
+        <input type="search" id="search" value="Search My Shop">
+        <p id="welcome">Welcome to Amazon</p>
+        <!-- <li id="serchicon" type="none"><a id="aclick" href="#search"> &#128269; </a> -->
+        <a id="aclick" href="#search">
+            <img id="srchimg" src="./images/search.jpg"> </a>
+        <!-- media -->
+        <img id="msrchimg" src="./images/msearch.jpg" alt="">
+        <!-- end -->
+        <ul type="none" id="links">
+            <li><a class="anchor" href="#">My Account</a></li>|
+            <li><a class="anchor" href="#">My Wishlist</a></li>|
+            <li><a class="anchor" href="#">My Cart</a></li>|
+            <li><a class="anchor" href="#">Chackout</a></li>|
+            <li> <a class="anchor" href="#">Login</a></li>
+
+        </ul>
+
+    </header><br><br>
+    <section id="row1">
+        <div id="col1">Home
+        </div>
+        <div id="col2">Furniture
+        </div>
+        <div id="col3">Electronincs
+        </div>
+        <div id="col4">Apparel
+        </div>
+        <div id="col5">Music
+        </div>
+        <div id="col6">E-Books
+        </div>
+    </section>
+    <!-- media -->
+    <div id="mlogo">
+        <img id="logo_m" src="./images/amazonlogo.jpg">
+        <center id="welcome_m">Welcome To Amazon</center>
+        <!-- end -->
+    </div>
+    <ul id="bodylinks" type="none">
+        <li>
+            <a href="#">Home</a><b>></b>
+        </li>
+        <li>
+            <a href="#">Furniture</a><b>></b>
+        </li>
+        <li>Chair</li>
+    </ul>
+    <section id="product">
+        <div id="p1">
+            <img id="fisrstimg" class="chair" src="./images/chair1.jpg" alt="">
+            <br><b>-</b> <input type="range" id="zoomer1" min="1" max="5" value="1" step="0.1" width="300px" oninput="deepdive1()"
+                name="zoom"><b>+</b>
+
+        </div>
+
+        <div id="p1" class="chairs">
+            <img class="chair" id="secimg" src="./images/chair1.jpg" alt="">
+            <br>
+            <Br> <b>-</b><input type="range" id="zoomer2" min="1" max="5" value="1" step="0.1" oninput="deepdive2()" name="zoom"><b>+</b>
+
+        </div>
+
+        <div id="p1" class="chairs">
+            <img class="chair" id="thirdimg" src="./images/chair5.jpg" alt="">
+            <br><br> <b>-</b><input type="range" id="zoomer3" min="1" max="5" value="1" step="0.1" oninput="deepdive3()"
+                name="zoom"><b>+</b>
+
+        </div>
+
+        <div id="p1" class="chairs">
+            <img class="chair" id="fourthimg" src="./images/chair2.jpg" alt="">
+            <br><br> <b>-</b><input type="range" id="zoomer4" min="1" max="5" value="1" step="0.1" oninput="deepdive4()"
+                name="zoom"><b>+</b>
+
+        </div>
+        <!-- media demoimages -->
+        <div id="col2_1_m">
+
+            <div class="demoimg">
+                <img class="dimages" onclick="currentImage(1)" src="./images/chair1.jpg" alt="">
+            </div>&nbsp;
+            <div class="demoimg">
+                <img class="dimages" onclick="currentImage(2)" src="./images/chair5.jpg" alt="">
+            </div>&nbsp;
+            <div class="demoimg">
+                <img class="dimages" onclick="currentImage(3)" src="./images/chair2.jpg" alt="">
+            </div>
+
+        </div>
+        <!-- ends -->
+        <!-- media product information -->
+
+        <div id="prodinfo_m">
+            <b><h4>Chair</h4></b>
+            <p>Regular Price:&#8377;120.00</p>
+            <b><p>Special Price:&#8377;99.99</p></b>
+            <p id="inf">
+                One of the basic pieces of furniture a chair is a type of seat.</p>
+            <p>Availability : In Stock</p>
+            Quantity:&nbsp;&nbsp;<input type="text" id="quantity" value="1"> &nbsp;&nbsp; &nbsp; <button id="addcart">Add to Cart</button>&nbsp;&nbsp;
+            <br> <br> <a href="#" class="add">Add To Wishlist</a>&nbsp;&nbsp; <a href="#" class="add">Add To Wishlist</a>
+            <br> <br>
+            <img class="star" src="./images/yellostar.jpg" alt="yellostar">
+            <img class="star" src="./images/yellostar.jpg" alt="yellostar">
+            <img class="star" src="./images/yellostar.jpg" alt="yellostar">
+            <img class="star" src="./images/yellostar.jpg" alt="yellostar">
+            <img class="star" src="./images/whitestar.jpg" alt="yellostar">
+            <br>
+            <a href="#" class="review">3 Reviews</a>|
+            <a href="#" class="review">Review this product</a>
+            <br>
+
+            <img id="email" src="./images/EMAIL.jpg" alt="">&nbsp;<a href="#" id="Emailto">Email to a Friend</a>
+
+
+
+        </div>
+        <!-- ends -->
+
+        <!-- product details for media qurey -->
+        <div id="heading1">
+            <img class="detailimg" onclick="hidedetails()" src="./images/minus.jpg" alt="">
+            <center>
+                <h4>Product Details</h4>
+            </center>
+            <img class="detailimg" onclick="details()" src="./images/downarrow.jpg" alt="">
+        </div>
+
+        <div id="details_m">
+
+            <p id="p1">One of the basic pieces of furniture, a chair is a type of seat. Its primary features are two pieces of a durable
+                material, attached as back and seat to one another at a 90° or slightly greater angle, with usually the four
+                corners of the horizontal seat attached in turn to four legs—or other parts of the seat's underside attached
+                to three legs or to a shaft about which a four-arm turnstile on rollers can turn—strong enough to support
+                the weight of a person who sits on the seat.</p>
+        </div>
+        <!-- ends -->
+        <!-- mediat additional infor  -->
+        <div id="heading2">
+            <img class="detailimg1" onclick="hidedetails()" src="./images/plus.jpg" alt="">
+            <center>
+                <h4>Additional Information</h4>
+            </center>
+            <img class="detailimg1" onclick="details()" src="./images/rightarrow.jpg" alt="">            
+        </div>
+
+        <div id="addinfor_m2">
+
+
+            <p>One of the basic pieces of furniture, a chair is a type of seat. Its primary features are two pieces of a durable
+                material, attached as back and seat to one another at a 90° or slightly greater angle, with usually the four
+                corners of the horizontal seat attached in turn to four legs—or other parts of the seat's underside attached
+                to three legs or to a shaft about which a four-arm turnstile on rollers can turn—strong enough to support
+                the weight of a person who sits on the seat.</p>
+        </div>
+
+        <!-- end -->
+        <!-- media -information and account-->
+        <div id="heading3">
+            <img class="detailimg1" onclick="hidedetails()" src="./images/plus.jpg" alt="">
+            <center>
+                <h4>My Account</h4>
+            </center>
+            <img class="detailimg1" onclick="details()" src="./images/rightarrow.jpg" alt="">           
+        </div>
+        <div id="heading4">
+            <img class="detailimg" onclick="hidedetails()" src="./images/minus.jpg" alt="">
+            <center>
+                <h4>Information</h4>
+            </center>
+            <img class="detailimg" onclick="footerdisplsy()" src="./images/downarrow.jpg" alt="">
+        </div>
+        <div id="links_m">
+            <ul type="none">
+                <li><a href="#">About Us</a></li>
+                <li> <a href="#">Customer Services</a></li>
+                <li> <a href="#">Subscribe Here</a></li>
+                <li> <a href="#">Order & Returns</a></li>
+                <li><a href="#">Site Map</a></li>
+                <li> <a href="#">Help</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+
+
+        </div>
+        <div id="heading5">
+            <img class="detailimg1" onclick="hidedetails()" src="./images/plus.jpg" alt="">
+            <center>
+                <h4>Contact</h4>
+            </center>
+            <img class="detailimg1" onclick="details()" src="./images/rightarrow.jpg" alt="">            -->
+        </div>
+        <div id="heading6">
+            <ul type="none">
+                <li>Newsletter</li>
+                <li>Singnup to our Newsletter</li>
+                <li> <input type="text" id="signup" placeholder="type email address"></li>
+            </ul>
+        </div>
+        <div id="frt">
+            <center>@copyright the information</center>
+        </div>
+        <!-- end -->
+        <div id="prodinfo">
+            <b><h4>Chair</h4></b> by
+            <a href="#">@homeTown<br><br></a>
+            <img class="star" src="./images/yellostar.jpg" alt="yellostar">
+            <img class="star" src="./images/yellostar.jpg" alt="yellostar">
+            <img class="star" src="./images/yellostar.jpg" alt="yellostar">
+            <img class="star" src="./images/yellostar.jpg" alt="yellostar">
+            <img class="star" src="./images/whitestar.jpg" alt="yellostar">
+
+            <a href="#" class="review">3 Reviews</a>|
+            <a href="#" class="review">Review this product</a>
+            <br>
+            <p>Availability : In Stock</p>
+            <p>Regular Price:&#8377;120.00</p>
+            <p>Special Price:&#8377;99.99</p>
+            <div id="qun">
+                Quantity:&nbsp;&nbsp;<input type="text" id="quantity" value="1"> &nbsp;&nbsp; &nbsp; <button id="addcart">Add to Cart</button>&nbsp;&nbsp;
+                OR
+                <ul type="none" id="add">
+                    <li> <a href="#" class="add">Add To Wishlist</a>
+                    </li>
+                    <li>
+                        <a href="#" class="add">Add To Compare</a></li>
+                </ul>
+            </div>
+            <a href="#" id="info">Product Information</a>
+
+
+
+        </div>
+        <div id="cart">
+            <div id="compare">
+                <b><h3>Compare Products(2)</h3></b>
+                <p class="sony"><b>Sony Digital Camara</b></p>
+                <p class="sony"><b> Digital Camara</b></p><br>
+
+                <a href="#" id="clear">Clear All</a> <button id="btncompare">Compare</button>
+            </div> <br>
+            <div id="mycart">
+                <p><b><h3>My Cart</h3></b></p>
+                <p class="sony"><b>There is 1 item inyour shopping cart</b></p><br>
+                <a href="#" id="clear">Clear All</a> <button id="btncompare">Chackout</button>
+            </div>
+
+        </div>
+    </section>
+    <section id="row2">
+
+
+        <div id="col2_1">
+
+            <div class="demoimg">
+                <img class="dimages" onclick="currentImage(1)" src="./images/chair1.jpg" alt="">
+            </div>&nbsp;
+            <div class="demoimg">
+                <img class="dimages" onclick="currentImage(2)" src="./images/chair5.jpg" alt="">
+            </div>&nbsp;
+            <div class="demoimg">
+                <img class="dimages" onclick="currentImage(3)" src="./images/chair2.jpg" alt="">
+            </div>
+
+        </div>
+        <div id="col2_2">
+            <div id="divimg">
+                <img id="bpltv" src="./images/bpltv.jpg">
+            </div>
+            <div id="poll">
+                <p><b><h3>Your Shop Poll</h3></b></p>
+                <h4>How great is ?</h4>
+                <input class="rate" type="checkbox" value="Great">Great<br>
+                <input class="rate" type="checkbox" value="Amazing" checked>Amazing<br>
+                <input class="rate" type="checkbox" value="my shops">My shops a Success <br>
+                <input class="rate" type="checkbox" value="wow">Wow
+
+            </div>
+
+
+        </div>
+    </section>
+    <section id="row3">
+        <div id="details">
+            <h4>Product Details</h4>
+
+            <p id="p1">One of the basic pieces of furniture, a chair is a type of seat. Its primary features are two pieces of a durable
+                material, attached as back and seat to one another at a 90° or slightly greater angle, with usually the four
+                corners of the horizontal seat attached in turn to four legs—or other parts of the seat's underside attached
+                to three legs or to a shaft about which a four-arm turnstile on rollers can turn—strong enough to support
+                the weight of a person who sits on the seat.</p>
+        </div>
+        <div id="addinfor">
+            <h4>Additional Information</h4>
+
+            <p>One of the basic pieces of furniture, a chair is a type of seat. Its primary features are two pieces of a durable
+                material, attached as back and seat to one another at a 90° or slightly greater angle, with usually the four
+                corners of the horizontal seat attached in turn to four legs—or other parts of the seat's underside attached
+                to three legs or to a shaft about which a four-arm turnstile on rollers can turn—strong enough to support
+                the weight of a person who sits on the seat.</p>
+        </div>
+
+    </section>
+    <section id="row4">
+
+        <h4>You may also be intrested in</h4>
+        <div id="col3_1">
+
+            <div class="sujimg">
+                <img class="simages" src="./images/sofa-1.jpg" alt="">
+                <div class="cost">
+                    <ul type="none">
+                        <li><a href="#">Royal Sofa</a></li>
+                        <li>
+                            <p>Price:&#8377;12000.00</p>
+                        </li>
+                        <li><button id="addcrt">Add to Cart</button></li>
+                        <li><a href="#">Add To Cart</a></li>
+                        <li><a href="#">Add To Compare</a></li>
+                    </ul>
+
+                </div>
+
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="sujimg">
+                <img class="simages" src="./images/sofa-2.jpg" alt="">
+                <div class="cost">
+                    <ul type="none">
+                        <li><a href="#">Luxurious Sofa</a></li>
+                        <li>
+                            <p>Price:&#8377;25000.00</p>
+                        </li>
+                        <li><button id="addcrt">Add to Cart</button></li>
+                        <li><a href="#">Add To Cart</a></li>
+                        <li><a href="#">Add To Compare</a></li>
+                    </ul>
+
+                </div>
+
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="sujimg">
+                <img class="simages" src="./images/sofa-3.jpg" alt="">
+                <div class="cost">
+                    <ul type="none">
+                        <li><a href="#">Normal Sofa</a></li>
+                        <li>
+                            <p>Price:&#8377;12000.00</p>
+                        </li>
+                        <li><button id="addcrt">Add to Cart</button></li>
+                        <li><a href="#">Add To Cart</a></li>
+                        <li><a href="#">Add To Compare</a></li>
+                    </ul>
+
+                </div>
+
+            </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="sujimg">
+                <img class="simages" src="images/sofa-4.jpg" alt="">
+                <div class="cost">
+                    <ul type="none">
+                        <li><a href="#">Living RoomSofa</a></li>
+                        <li>
+                            <p>Price:&#8377;30000.00</p>
+                        </li>
+                        <li><button id="addcrt">Add to Cart</button></li>
+                        <li><a href="#">Add To Cart</a></li>
+                        <li><a href="#">Add To Compare</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div>
+            <center>
+                <a href="#">About Us</a>|<a href="#">Customer Services</a>|<a href="#">Subscribe Here</a>
+                <br>
+
+            </center>
+            <p id="secondlink"><a href="#">Site Map</a>|<a href="#">Search Terms</a>|<a href="#">Advance Search</a>|
+                <a href="#">Order & Returns</a>|
+                <a href="#">Help</a>|
+                <a href="#">Contact us</a>
+            </p>
+            <center>
+                <h5>@copyright the information</h5>
+            </center>
+        </div>
+
+    </footer>
+
+
+    <!-- //zoomer script -->
+    <script>
+        var zoomer1 = document.getElementById('zoomer1');
+        var firstimg = document.getElementById('fisrstimg');
+        var secimg = document.getElementById("secimg");
+        var thirdimg = document.getElementById("thirdimg");
+        var fourthimg = document.getElementById("fourthimg");
+        var i = 1;
+        function deepdive1() {
+            zoomlevel = zoomer1.valueAsNumber;
+            firstimg.style.webkitTransform = "scale(" + zoomlevel + ")";
+            firstimg.style.transform = "scale(" + zoomlevel + ")";
+        }
+        var zoomer2 = document.getElementById('zoomer2');
+
+        function deepdive2() {
+            zoomlevel = zoomer2.valueAsNumber;
+            secimg.style.webkitTransform = "scale(" + zoomlevel + ")";
+            secimg.style.transform = "scale(" + zoomlevel + ")";
+        }
+        var zoomer3 = document.getElementById('zoomer3');
+
+        function deepdive3() {
+            zoomlevel = zoomer3.valueAsNumber;
+            thirdimg.style.webkitTransform = "scale(" + zoomlevel + ")";
+            thirdimg.style.transform = "scale(" + zoomlevel + ")";
+        }
+        var zoomer4 = document.getElementById('zoomer4');
+
+        function deepdive4() {
+            zoomlevel = zoomer4.valueAsNumber;
+            fourthimg.style.webkitTransform = "scale(" + zoomlevel + ")";
+            firstimg.style.transform = "scale(" + zoomlevel + ")";
+        }
+    </script>
+</body>
+
+</html>

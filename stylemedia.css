@@ -1,0 +1,411 @@
+
+#drpdown{
+    display: none;
+    position: absolute;
+    top:100px;
+    left: 5px;
+
+}
+#details_m,#addinfor_m2{
+    display: none;
+    position: absolute;
+    top:850px;
+    /* left: 5px; */
+    width:100%;
+    height: 30px;
+ 
+}
+#menu{
+    display: none;
+}
+
+#menu,#mcart,#number,#logo_m,#logo_m #welcome_m,#mlogo,#heading1,#heading2,#heading3,
+#heading4,#links_m,#heading5,#heading6,#frt,#links_m{
+    display: none;
+}
+#msrchimg,#drpdown,#col2_1_m,#prodinfo_m,#hcol2_3_m{
+    display: none;
+}
+
+
+/* #msrchimg{
+    display: none;
+} */
+.anchor{
+    text-decoration-style: none;
+    margin-right:50px;
+}
+
+@media only screen and (min-width:320px) and (max-width:768px) {
+   
+   #row1,#bodylinks,#product,#row4{
+       display: none;
+       /* visibility: hidden; */
+   }
+     #menu{
+        position: absolute;
+        top: 20px;
+        left: 8%;
+        height: 30px;
+        width: 30px;
+        display: block;
+    }
+    #drpdown{
+        position: absolute;
+        top: 60px;
+        /* left:5px; */
+        height: 600px;
+        bordexr: 1px solid blue;
+        width: 120px;
+    }
+    #links_m{
+        position: absolute;
+        top: 1755px;
+        /* border: 1px solid red; */
+        background-color: lightgray;
+        left: 0;
+        width:100%;
+        height: 100x;
+    }
+    #links_m ul{
+        position: relative;
+        margin-left:-20px;
+
+    }
+    header{
+        
+        display: flex;
+        height: 50px;
+        background-color:black;
+        width: 100%;
+
+    }
+#search,#logo,#welcome,#aclick,#links{
+     visibility: hidden;
+    }
+    #zoomer1,#zoomer2,#zoomer3,#zoomer4,#p1 b,#prodinfo,#cart,#mycart,#row2,#row3,footer{
+        visibility: hidden;
+    }
+
+
+    #msrchimg{
+        position: absolute;
+        top: 20px;
+        right: 3%;
+        height: 30px;
+        width: 30px;
+        display: block;
+    }
+    #mcart{
+        position: absolute;
+        top: 20px;
+        right: 40%;
+        height: 30px;
+        width: 30px;
+        display: block;
+    }
+    #number{
+        position: absolute;
+        top: 20px;
+        right: 30%;
+        height: 30px;
+        width: 30px;
+        display: block;
+        color: white;
+        font-size: 15px;
+
+        /* border: 1px solid white; */
+    }
+    #mlogo{
+        position: absolute;
+        top:70px;
+        right: 30%;
+        height: 130px;
+        width:140px;
+        display: block;
+        /* border: 1px solid black; */
+    }
+    #logo_m{
+      width: 145px;
+      height: 115px;
+      display: block;
+    }
+    
+    #product{
+        position: absolute; 
+        height: 400px;
+        display: block;
+        width: 400px;
+        top: 220px;
+/* height: 310px; */
+        /* left: 4%; */
+        /* border-top: 1px solid rebeccapurple; */
+    }
+    #col2_1_m{
+        /* display: block; */
+        display: inline-flex;
+        margin-left: 59px;
+        margin-top:-50px;
+        position: absolute; 
+        top:330px;
+        
+    }
+    #col2_1_m  .demoimg .dimages{
+        width: 80px;
+        height: 80px;
+        margin-top: 30px;
+        flex: 1;
+        border: 1px solid lightgray;
+        display:block;
+    
+    }
+    .chair{
+        width: 800px;
+        height: 300px;
+        border: 1px solid lightgray;
+        overflow: hidden;
+        margin: 0 auto;
+        height: 300px; 
+    
+        
+    }
+    .chairs{
+        width: 35%;
+        height: 270px;
+        position: absolute; 
+    left:11%;
+        display: none;
+        /* border: 1px solid red; */
+        /* top:220px; */
+    
+    }
+    #secimg,#thirdimg,#fourthimg{
+        width: 100%;
+        height: 260px;
+    }
+           #prodinfo_m{
+            display: inline;
+            position: absolute;
+            top:400px;
+            left: 6%;
+           } 
+        #prodinfo_m .star,
+        #heading1 .detailimg,
+        #heading2 .detailimg1,
+        #heading3 .detailimg1,
+        #heading4 .detailimg,
+        #heading5 .detailimg1{
+            height: 20px;
+            width: 17px;
+        
+            
+        }
+        #prodinfo_m .review{
+            margin-bottom: 20px;
+            /* border: 1px solid red; */
+            height: 10px;
+            padding-bottom: 2px;
+
+        }
+        /* #qun{
+            display: inline-block;
+        } */
+        #add{
+            display: inline;
+            margin-top: 7px;
+            margin-left: -15px;
+        }
+        #inf{
+            width: 200px;
+            /* border: 1px solid red; */
+        }
+        #email{
+            margin-top: 30px;
+            height: 30px;
+            width: 30px;
+        
+            
+        }
+        #heading1{
+            display: inline-flex;
+            border: 1px solid black;
+            height: 20px;
+            width: 100%;
+            position: absolute;
+            top:830px;
+            left: 0%;
+            right: 0%;
+            background-color:lightgray
+        }
+        #heading2{
+            display: inline-flex;
+            border: 1px solid black;
+            height: 20px;
+            width: 100%;
+            position: absolute;
+            top:860px;
+            left: 0%;
+            right: 0%;
+            background-color:lightgray
+        }
+        #heading1 h4{
+            text-align: center;
+            position: relative;
+            bottom: 20px;
+            width:365px;
+        }
+        #heading2 h4,#heading3 h4,#heading4 h4
+        ,#heading5 h4{
+            text-align: center;
+            position: relative;
+            bottom: 20px;
+            width:365px;
+        }
+        #heading3{
+            display: inline-flex;
+            border: 1px solid black;
+            height: 20px;
+            width: 100%;
+            position: absolute;
+            top:1700px;
+            left: 0%;
+            right: 0%;
+            color: white;
+            background-color:black;
+            }
+            #heading4{
+                display: inline-flex;
+                border: 1px solid black;
+                height: 20px;
+                width: 100%;
+                position: absolute;
+                top:1730px;
+                left: 0%;
+                right: 0%;
+                color: white;
+                background-color:black;
+                    
+            }
+            #heading5{
+                display: inline-flex;
+                border: 1px solid black;
+                height: 20px;
+                width: 100%;
+                position: absolute;
+                top:1900px;
+                left: 0%;
+                right: 0%;
+                color: white;
+                background-color:black;
+            }
+            #heading6{
+                display: inline-flex;
+                /* border: 1px solid black; */
+                height: 100px;
+                width: 100%;
+                position: absolute;
+                top:1930px;
+                left: 0%;
+                right: 0%;
+                /* color: white; */
+                background-color:lightgray;
+                          }
+            #heading6 #signup{
+              border: 1px solid black;
+              height:   10px;
+              color:lightgray;
+              margin-top: 50px;
+              position: relative;
+              bottom: 30px;
+              /* left: 120px; */
+              
+            }
+
+              
+#row4{
+display: block;
+    position: absolute;
+    top:1000px;
+    left: 6%;
+
+}
+.sujimg .simages{
+    
+    
+        flex: 1;
+        width: 150px;
+        height: 160px;
+        margin-top: 5px;
+        margin-left: -50%; 
+        /* flex: 1; */
+        border: 1px solid lightgray;
+    
+    }
+/*     
+#row4 .sujimg{
+    height: 100px;
+    width: 100px;
+} */
+#row4 #col3_1{
+    display: inline;
+    position: relative;
+    left: 50%;
+}
+#row4 #col3_1 .cost{
+    display: inline-block;
+    position: relative; 
+     left: 48%;
+     /* border: 1px solid red; */
+     height: 120px;
+     width: 180px;
+    bottom: 12px;
+    
+}
+.cost ul{
+    /* border: 1px solid black; */
+    margin-bottom: 30px;
+    position: relative;
+    bottom: 30px;
+}
+#frt{
+    display: inline-flex;
+    /* border: 1px solid black; */
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    top:2040px;
+    /* left: 30%; */
+    /* right: 0%; */
+    /* color: white; */
+    background-color:lightgray;
+}
+#frt center{
+    position: relative;
+    left: 30%;
+    top:20px;
+}
+/* -------------------------------------------------------------------- */
+/* Responsive home page */
+/* _____________________________________________________________________ */
+#hrow1,#hrow3,#hcol2_2{
+    display: none;
+}
+#hrow2{
+    margin-top: 100px;
+    margin-left: 30px;
+}
+#hcol2_3{
+    /* display: flex; */
+}
+/* #product_row1,#product_row2,#product_row3{
+    display: block
+    }
+    #product_row1 .img1,#product_row1 .img2,#product_row3 .img1,
+    #product_row2 .img1,#product_row2 .img2,#product_row3 .img2{
+        display:inline;
+    } */
+    
+    
+
+}
+    
